@@ -5,19 +5,24 @@
 .pickers-combo-container {
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     height: 100%;
 }
 .row-layout {
     display: flex;
 }
 .group {
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     position: relative;
     min-width: 50px;
     min-height: 50px;
 }
 .group_1 {
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     padding: 16px;
     width: 500px;
     min-width: 50px;
@@ -25,20 +30,17 @@
 }
 .group_2 {
     flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
+    align-content: flex-start;
     position: relative;
+    width: 1000px;
     min-width: 50px;
 }
 .select {
     margin: 16px;
     height: max-content;
     min-width: min-content;
-}
-.button {
-    margin: 16px;
-    height: max-content;
-    min-width: min-content;
-    flex-shrink: 0;
 }
 .dropdown {
     width: 188px;

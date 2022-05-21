@@ -15,6 +15,7 @@
 }
 .column-layout_1 {
     background-color: hsla(var(--igc-surface-500));
+    justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
     margin: 0.0px;
@@ -23,12 +24,9 @@
     min-width: 320px;
     min-height: 50px;
 }
-.range-slider {
-    height: max-content;
-    min-width: 50px;
-}
 .group {
     background-color: hsla(var(--igc-surface-500));
+    justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
     padding: 32px;
@@ -36,38 +34,45 @@
     min-width: 320px;
     min-height: 50px;
 }
-.text {
-    height: max-content;
-    min-width: min-content;
-}
 .group_1 {
     flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
+    align-content: flex-start;
     margin: 0 0 16px;
     min-width: 50px;
     min-height: 50px;
 }
 .group_2 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
     position: relative;
     margin: 0 0 16px;
     min-width: 50px;
     min-height: 50px;
 }
 .group_3 {
+    justify-content: flex-start;
     align-items: center;
+    align-content: flex-start;
     position: relative;
     margin: 8px;
     min-width: 50px;
 }
 .group_4 {
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     position: relative;
     margin: 8px;
     min-width: 50px;
 }
 .group_5 {
     flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
+    align-content: flex-start;
     overflow: hidden;
     margin: 0 0 16px;
     min-width: 50px;
@@ -75,14 +80,18 @@
     flex-shrink: 0;
 }
 .group_6 {
+    justify-content: flex-start;
     align-items: flex-end;
+    align-content: flex-start;
     position: relative;
     padding: 16px;
     min-width: 50px;
     min-height: 50px;
 }
 .group_7 {
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     position: relative;
     min-width: 50px;
     min-height: 50px;
@@ -147,6 +156,10 @@
     max-height: max-content;
     flex-shrink: 0;
 }
+.range-slider {
+    height: max-content;
+    min-width: 50px;
+}
 .icon {
     font-size: 24px;
     width: 24px;
@@ -157,6 +170,10 @@
     min-height: max-content;
     max-width: max-content;
     max-height: max-content;
+}
+.text {
+    height: max-content;
+    min-width: min-content;
 }
 .avatar {
     margin: 16px;

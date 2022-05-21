@@ -3,7 +3,9 @@
     flex-direction: column;
 }
 .card-calendar-container {
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     overflow: auto;
     height: 100%;
 }
@@ -12,39 +14,10 @@
 }
 .group {
     flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
     position: relative;
-    min-width: 50px;
-    min-height: 50px;
-    flex-grow: 1;
-    flex-shrink: 0;
-}
-.actions-content {
-    min-width: 50px;
-    min-height: 40px;
-}
-.body-content {
-    min-width: 50px;
-    min-height: 50px;
-}
-.column-layout-1 {
-    align-items: stretch;
-    margin: 0.0px;
-    padding: 0.0px;
-}
-.text-1 {
-    margin: 0.0px;
-    padding: 0.0px;
-    height: max-content;
-}
-.actions-content_1 {
-    flex-direction: column;
-    min-width: 50px;
-    min-height: 40px;
-}
-.group_1 {
-    align-items: stretch;
     min-width: 50px;
     min-height: 50px;
     flex-grow: 1;
@@ -75,6 +48,14 @@
     min-width: 320.0px;
     min-height: 50.0px;
     flex-shrink: 0;
+    flex-direction: row;
+}
+.column-layout-1 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    margin: 0.0px;
+    padding: 0.0px;
 }
 .card-11 {
     margin: 16px;
@@ -93,10 +74,38 @@
     min-width: 320.0px;
     min-height: 50.0px;
     flex-shrink: 0;
+    flex-direction: row;
+}
+.group_1 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    min-width: 50px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.actions-content {
+    min-width: 50px;
+    min-height: 40px;
+}
+.body-content {
+    min-width: 50px;
+    min-height: 50px;
+}
+.actions-content_1 {
+    flex-direction: column;
+    min-width: 50px;
+    min-height: 40px;
 }
 .avatar {
     margin: 0.0px;
     padding: 0.0px;
+}
+.text-1 {
+    margin: 0.0px;
+    padding: 0.0px;
+    height: max-content;
 }
 .calendar {
     margin: 16px;

@@ -1,6 +1,4 @@
 @page "/pickers-combo"
-@inject NavigationManager NavigationManager
-@inject HttpClient HttpClient
 
 <div class="column-layout pickers-combo-container">
     <div class="row-layout group">
@@ -18,8 +16,8 @@
             <span class="select">Combo not yet available in Blazor</span>
         </div>
     </div>
-    <div class="row-layout group_2">
-        <IgbButton @onclick="@(e => Dropdown?.Toggle(Button))" @ref="Button" class="button" pickers-combo-scope>
+    <div class="column-layout group_2">
+        <IgbButton @onclick="@(e => Dropdown?.Toggle(Button))" @ref="Button" class="select" pickers-combo-scope>
             Open dropdown
             <IgbRipple></IgbRipple>
         </IgbButton>

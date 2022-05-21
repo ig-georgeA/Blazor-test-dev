@@ -4,12 +4,14 @@
 .sign-in-page-container {
     justify-content: flex-end;
     align-items: stretch;
+    align-content: flex-start;
     height: 100%;
 }
 .row-layout-1 {
     background-color: hsla(var(--igc-gray-200));
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     margin: 0.0px;
     padding: 0.0px;
     flex-grow: 1;
@@ -24,10 +26,21 @@
     border-color: hsla(var(--igc-gray-400));
     border-width: 2px;
     border-style: solid;
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     margin: 0.0px;
     padding: 36.0px;
     width: 500.0px;
+    height: max-content;
+    flex-shrink: 0;
+}
+.row-layout-2 {
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    margin: 0.0px 0.0px 32.0px;
+    padding: 0.0px;
     height: max-content;
     flex-shrink: 0;
 }
@@ -36,14 +49,6 @@
     margin: 0.0px 0.0px 32.0px;
     padding: 0.0px;
     height: max-content;
-}
-.row-layout-2 {
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.0px 0.0px 32.0px;
-    padding: 0.0px;
-    height: max-content;
-    flex-shrink: 0;
 }
 .hyperlink {
     height: max-content;

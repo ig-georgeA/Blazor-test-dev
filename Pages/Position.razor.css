@@ -3,7 +3,9 @@
 }
 .position-container {
     flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     height: 100%;
 }
 .group {
@@ -13,6 +15,7 @@
     border-style: solid;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     position: relative;
     margin: 16px;
     padding: 32px;
@@ -22,12 +25,6 @@
     min-height: 50px;
     flex-shrink: 0;
 }
-.h5 {
-    width: min-content;
-    height: max-content;
-    min-width: min-content;
-    flex-shrink: 0;
-}
 .group_1 {
     background-color: hsla(var(--igc-warn-500));
     border-color: hsla(var(--igc-gray-900));
@@ -35,6 +32,7 @@
     border-style: solid;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     right: 647.2998960498956px;
     top: 398.6587797232331px;
     position: absolute;
@@ -52,6 +50,7 @@
     border-style: solid;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     top: 50px;
     position: relative;
     margin: 16px;
@@ -69,6 +68,7 @@
     border-style: solid;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     bottom: 60px;
     position: relative;
     margin: 16px;
@@ -86,6 +86,7 @@
     border-style: solid;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     right: 50px;
     position: relative;
     margin: 16px;
@@ -104,6 +105,7 @@
     z-index: 1;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     right: 0;
     bottom: 0;
     position: fixed;
@@ -111,6 +113,12 @@
     height: 118px;
     min-width: 50px;
     min-height: 50px;
+    flex-shrink: 0;
+}
+.h5 {
+    width: min-content;
+    height: max-content;
+    min-width: min-content;
     flex-shrink: 0;
 }
 .h5_1 {
