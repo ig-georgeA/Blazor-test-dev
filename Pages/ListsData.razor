@@ -1,6 +1,5 @@
 @page "/lists-data"
-@inject NavigationManager NavigationManager
-@inject HttpClient HttpClient
+@inject Northwind.NorthwindService northwindService
 
 <div class="column-layout lists-data-container">
     <div class="row-layout group">
@@ -103,10 +102,10 @@
 </div>
 
 @code {
-    private Northwind.EmployeesType[] northwindEmployees = Array.Empty<Northwind.EmployeesType>();
+    private Northwind.EmployeesType[]? northwindEmployees = Array.Empty<Northwind.EmployeesType>();
 
     protected override async Task OnInitializedAsync()
     {
-        northwindEmployees = await HttpClient.GetFromJsonAsync<Northwind.EmployeesType[]>("static-data/northwind-employees.json") ?? northwindEmployees;
+        northwindEmployees = await this.northwindService.GetEmployees() ?? northwindEmployees;
     }
 }

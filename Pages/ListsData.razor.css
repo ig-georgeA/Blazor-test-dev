@@ -3,7 +3,9 @@
     flex-direction: column;
 }
 .lists-data-container {
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     height: 100%;
 }
 .row-layout {
@@ -11,7 +13,9 @@
 }
 .group {
     flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     overflow: auto;
     position: relative;
     padding: 32px;
@@ -20,12 +24,17 @@
     flex-grow: 1;
     flex-basis: 0;
 }
-.actions-content {
-    min-width: 50px;
-    min-height: 40px;
+.card {
+    margin: 0 16px 16px 0;
+    width: 350px;
+    height: max-content;
+    min-width: min-content;
+    flex-shrink: 0;
 }
 .group_1 {
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     position: relative;
     min-width: 50px;
     min-height: 50px;
@@ -34,7 +43,9 @@
 }
 .group_2 {
     background-color: hsla(var(--igc-gray-100));
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     overflow: auto;
     position: relative;
     min-width: 50px;
@@ -43,7 +54,9 @@
     flex-basis: 0;
 }
 .group_3 {
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     position: relative;
     margin: 8px 0 0;
     min-width: 50px;
@@ -52,11 +65,23 @@
 .group_4 {
     justify-content: space-between;
     align-items: baseline;
+    align-content: flex-start;
     position: relative;
     min-width: 50px;
     min-height: max-content;
     flex-grow: 1;
     flex-basis: 0;
+}
+.actions-content {
+    min-width: 50px;
+    min-height: 40px;
+}
+.icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    width: max-content;
+    height: max-content;
 }
 .text {
     margin: 0 8px 0 0;
@@ -66,20 +91,6 @@
 .text_1 {
     height: max-content;
     min-width: min-content;
-}
-.card {
-    margin: 0 16px 16px 0;
-    width: 350px;
-    height: max-content;
-    min-width: min-content;
-    flex-shrink: 0;
-}
-.icon {
-    font-size: 24px;
-    width: 24px;
-    height: 24px;
-    width: max-content;
-    height: max-content;
 }
 .avatar::part(base) {
     color: hsla(var(--igc-surface-500));

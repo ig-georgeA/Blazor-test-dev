@@ -3,7 +3,9 @@
     flex-direction: column;
 }
 .data-grid-layouts-container {
+    justify-content: flex-start;
     align-items: stretch;
+    align-content: flex-start;
     height: 100%;
 }
 .grid-plus {

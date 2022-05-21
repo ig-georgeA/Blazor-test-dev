@@ -1,6 +1,5 @@
 @page "/data-grid-layouts"
-@inject NavigationManager NavigationManager
-@inject HttpClient HttpClient
+@inject Northwind.NorthwindService northwindService
 
 <div class="column-layout data-grid-layouts-container">
     <IgbDataGrid DataSource="northwindCustomers" Density="ControlDisplayDensity.Cosy" SelectionMode="GridSelectionMode.MultipleRow" ColumnMovingMode="ColumnMovingMode.Deferred" AutoGenerateColumns="false" DefaultColumnMinWidth="136" class="grid-plus" data-grid-layouts-scope>
@@ -38,12 +37,12 @@
 </div>
 
 @code {
-    private Northwind.CustomersType[] northwindCustomers = Array.Empty<Northwind.CustomersType>();
-    private Northwind.EmployeesType[] northwindEmployees = Array.Empty<Northwind.EmployeesType>();
+    private Northwind.CustomersType[]? northwindCustomers = Array.Empty<Northwind.CustomersType>();
+    private Northwind.EmployeesType[]? northwindEmployees = Array.Empty<Northwind.EmployeesType>();
 
     protected override async Task OnInitializedAsync()
     {
-        northwindCustomers = await HttpClient.GetFromJsonAsync<Northwind.CustomersType[]>("static-data/northwind-customers.json") ?? northwindCustomers;
-        northwindEmployees = await HttpClient.GetFromJsonAsync<Northwind.EmployeesType[]>("static-data/northwind-employees.json") ?? northwindEmployees;
+        northwindCustomers = await this.northwindService.GetCustomers() ?? northwindCustomers;
+        northwindEmployees = await this.northwindService.GetEmployees() ?? northwindEmployees;
     }
 }
