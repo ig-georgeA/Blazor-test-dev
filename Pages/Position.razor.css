@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
-    align-content: flex-start;
+    align-content: center;
     height: 100%;
 }
 .group {
