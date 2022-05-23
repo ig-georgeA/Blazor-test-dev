@@ -34,7 +34,6 @@
 }
 .column-layout-1_1 {
     background-color: hsla(var(--igc-gray-200));
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -57,8 +56,20 @@
     width: max-content;
     height: max-content;
 }
-.input-group-1 {
+.title-1_1 {
     margin: 8.0px;
     padding: 0.0px;
     height: max-content;
+    flex-shrink: 0;
+}
+.user-input {
+    margin: 8.0px;
+    padding: 0.0px;
+    height: max-content;
+}
+.button {
+    margin: 8.0px;
+    padding: 0.0px;
+    height: max-content;
+    flex-shrink: 0;
 }

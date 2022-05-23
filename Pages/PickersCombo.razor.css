@@ -37,7 +37,7 @@
     width: 1000px;
     min-width: 50px;
 }
-.select {
+.user-input {
     margin: 16px;
     height: max-content;
     min-width: min-content;
