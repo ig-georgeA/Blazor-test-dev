@@ -1,0 +1,31 @@
+@page "/child-view"
+@inject Northwind.NorthwindService northwindService
+
+<div class="row-layout child-view-container">
+    <IgbList class="list" child-view-scope>
+        @foreach (var item in northwindEmployees)
+        {
+            <IgbListItem>
+                <div slot="start">
+                    <IgbAvatar Src="@item.AvatarUrl" Shape="AvatarShape.Circle" class="avatar" child-view-scope></IgbAvatar>
+                </div>
+                <div slot="title">@item.LastName</div>
+                <div slot="subtitle">@item.Title</div>
+                <div slot="end">
+                    <span class="material-icons icon">
+                        star
+                    </span>
+                </div>
+            </IgbListItem>
+        }
+    </IgbList>
+</div>
+
+@code {
+    private Northwind.EmployeesType[] northwindEmployees = Array.Empty<Northwind.EmployeesType>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        northwindEmployees = await this.northwindService.GetEmployees() ?? northwindEmployees;
+    }
+}
