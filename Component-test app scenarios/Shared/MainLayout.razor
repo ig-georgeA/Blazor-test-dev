@@ -4,7 +4,7 @@
 <div class="column-layout main-navigation-container">
     <IgbNavbar class="navbar" main-navigation-scope>
         <div slot="start">
-            <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="@(e => NavDrawer?.Toggle())" class="icon-button" main-navigation-scope>
+            <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="@(e => NavDrawer?.Toggle())">
                 <span class="material-icons">
                     menu
                 </span>
@@ -12,19 +12,19 @@
             </IgbIconButton>
         </div>
         <div slot="end">
-            <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" main-navigation-scope>
+            <IgbIconButton Variant="IconButtonVariant.Flat">
                 <span class="material-icons">
                     search
                 </span>
                 <IgbRipple></IgbRipple>
             </IgbIconButton>
-            <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" main-navigation-scope>
+            <IgbIconButton Variant="IconButtonVariant.Flat">
                 <span class="material-icons">
                     favorite
                 </span>
                 <IgbRipple></IgbRipple>
             </IgbIconButton>
-            <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" main-navigation-scope>
+            <IgbIconButton Variant="IconButtonVariant.Flat">
                 <span class="material-icons">
                     more_vert
                 </span>
