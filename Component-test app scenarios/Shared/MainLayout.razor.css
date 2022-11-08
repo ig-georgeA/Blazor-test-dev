@@ -22,7 +22,6 @@
     flex-basis: 0;
 }
 .navbar {
-    background-color: hsla(var(--ig-primary-500));
     z-index: 1;
     left: 0;
     top: 0;
@@ -43,9 +42,6 @@
 }
 .nav-drawer::part(main) {
     width: 320px;
-}
-.icon-button::part(base) {
-    color: hsla(var(--ig-surface-500));
 }
 .icon {
     font-size: 24px;
